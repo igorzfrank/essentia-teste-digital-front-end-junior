@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Essentia Front-end Test</title>
-    <meta name="”color-scheme”" content="”light" dark” />
-    <meta name="”supported-color-schemes”" content="”light" dark” />
-    <style>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <style type="text/css">
       @font-face {
         font-family: "Proxima Nova";
         src: url("./fonts/ProximaNova-Black.woff") format("woff");
@@ -56,12 +56,9 @@
         font-display: swap;
       }
 
-      body {
-        margin: 0;
-        font-family: Helvetica;
-      }
-
       table {
+        width: 100%;
+        max-width: 600px;
         border-spacing: 0;
       }
 
@@ -70,26 +67,11 @@
         border: 0;
       }
 
-      img {
-        border: 0;
-        display: block;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4 {
-        margin: 0;
-      }
-
       p {
         margin: 0;
         line-height: 22px;
       }
+
       .wrapper {
         width: 100%;
         table-layout: fixed;
@@ -103,30 +85,36 @@
         margin: 0 auto;
         border-spacing: 0;
       }
-
-      @media (prefers-color-scheme: dark) {
-      }
     </style>
   </head>
-  <body>
+  <body style="margin: 0">
     <center class="wrapper">
-      <table class="main" width="100%" cellpadding="0" cellspacing="0">
+      <table
+        class="main"
+        width="100%"
+        style="max-width: 600px"
+        cellpadding="0"
+        cellspacing="0"
+      >
         <!-- NAV -->
         <tr>
           <td>
-            <table style="background: black; padding: 7px 0px">
+            <table
+              style="background: black; padding: 7px 0px; border-spacing: 0"
+            >
               <tr>
                 <td align="center" style="width: 200px; padding: 2px 0px">
                   <a
                     href="https://www.essentialnutrition.com.br/"
                     target="_blank"
                     style="
-                      font-family: Proxima Nova;
+                      font-family: Proxima Nova, Hlevetica, sans-serif;
                       font-weight: 600;
                       letter-spacing: 0.56px;
                       font-size: 14px;
                       color: #ffffff;
                       padding-left: 20px;
+                      text-decoration: none;
                     "
                     >HOME</a
                   >
@@ -144,11 +132,12 @@
                     href="https://www.essentialnutrition.com.br/produtos/lancamentos"
                     target="_blank"
                     style="
-                      font-family: Proxima Nova;
+                      font-family: Proxima Nova, Hlevetica, sans-serif;
                       font-weight: 600;
                       letter-spacing: 0.56px;
                       font-size: 14px;
                       color: #ffffff;
+                      text-decoration: none;
                     "
                     >LANÇAMENTOS</a
                   >
@@ -158,12 +147,13 @@
                     href="https://www.essentialnutrition.com.br/customer/account/login/"
                     target="_blank"
                     style="
-                      font-family: Proxima Nova;
+                      font-family: Proxima Nova, Hlevetica, sans-serif;
                       font-weight: 600;
                       letter-spacing: 0.56px;
                       font-size: 14px;
                       color: #ffffff;
                       padding-right: 20px;
+                      text-decoration: none;
                     "
                     >LOGIN</a
                   >
@@ -178,7 +168,7 @@
             <img
               src="https://i.ibb.co/5rys8Cp/pht-01.png"
               width="100%"
-              style="max-width: 600px"
+              style="max-width: 600px; display: block; border-spacing: 0"
               alt="Imagem do encapsulado Omega Braien da Essential Nutrition"
             />
           </td>
@@ -188,7 +178,8 @@
           <td style="padding: 40px 24px">
             <p
               style="
-                font-family: Helvetica Neue;
+                margin: 0;
+                font-family: Helvetica Neue, Helvetica, sans-serif;
                 font-weight: 700;
                 color: #141414;
               "
@@ -197,7 +188,7 @@
             </p>
             <p
               style="
-                font-family: Helvetica Neue;
+                font-family: Helvetica Neue, Helvetica, sans-serif;
                 margin: 27px 0px;
                 color: #666666;
               "
@@ -208,7 +199,13 @@
                 cérebro.</span
               >
             </p>
-            <p style="font-family: Helvetica Neue; color: #666666">
+            <p
+              style="
+                margin: 0;
+                font-family: Helvetica Neue, Helvetica, sans-serif;
+                color: #666666;
+              "
+            >
               <span style="font-weight: bold; color: #7c68b5"
                 >60% da estrutura cerebral</span
               >
@@ -226,7 +223,7 @@
             <img
               src="https://i.ibb.co/vX9gY8j/pht-02.png"
               width="100%"
-              style="max-width: 600px"
+              style="max-width: 600px; display: block; border-spacing: 0"
               alt="Imagem de uma mão segurando duas capsulas de ômega-3 da Essential Nutrition"
             />
           </td>
@@ -236,7 +233,8 @@
           <td style="padding: 40px 24px; background: #141414">
             <h1
               style="
-                font-family: Helvetica;
+                margin: 0;
+                font-family: Helvetica, sans-serif;
                 font-weight: 700;
                 line-height: 30px;
                 font-size: 30px;
@@ -247,7 +245,7 @@
             </h1>
             <p
               style="
-                font-family: Helvetica Neue;
+                font-family: Helvetica Neue, Helvetica, sans-serif;
                 margin: 27px 0px;
                 color: #ffffff;
               "
@@ -260,7 +258,13 @@
               >
               pelo nosso cérebro.
             </p>
-            <p style="font-family: Helvetica Neue; color: #ffffff">
+            <p
+              style="
+                margin: 0;
+                font-family: Helvetica Neue, Helvetica, sans-serif;
+                color: #ffffff;
+              "
+            >
               Para entender um pouco mais sobre essa relação e ainda descobrir
               outros hábitos que podem ajudar na
               <span style="font-weight: bold; color: #7c68b5"
@@ -268,8 +272,9 @@
               >, acesse o artigo no nosso blog!
             </p>
             <a
+              class="dark-link"
               style="
-                font-family: Helvetica Neue;
+                font-family: Helvetica Neue, Helvetica, sans-serif;
                 font-size: 17px;
                 margin-top: 40px;
                 background: #ffffff;
@@ -279,6 +284,7 @@
                 display: block;
                 text-align: center;
                 border-radius: 4px;
+                text-decoration: none;
               "
               href="https://www.essentialnutrition.com.br/conteudos/"
               target="_blank"
@@ -292,7 +298,13 @@
             <table>
               <tr>
                 <td>
-                  <p style="font-family: Helvetica Neue; color: #141414">
+                  <p
+                    style="
+                      margin: 0;
+                      font-family: Helvetica Neue, Helvetica, sans-serif;
+                      color: #141414;
+                    "
+                  >
                     Uma composição inteligente com ômega-3 que pode ajudar você
                     a
                     <span style="font-weight: bold; color: #7c68b5">
@@ -303,7 +315,10 @@
                 </td>
               </tr>
             </table>
-            <table align="center" style="width: 320px; margin-top: 40px">
+            <table
+              align="center"
+              style="width: 320px; margin-top: 40px; border-spacing: 0"
+            >
               <tr>
                 <td style="width: 150px; vertical-align: top">
                   <table
@@ -313,6 +328,7 @@
                       height: 90px;
                       border-radius: 50%;
                       border: 1px solid #7c68b5;
+                      border-spacing: 0;
                     "
                   >
                     <tr align="center">
@@ -320,10 +336,12 @@
                         <p
                           align="center"
                           style="
-                            font-family: Roboto;
+                            margin: 0;
+                            font-family: Roboto, Helvetica, sans-serif;
                             font-weight: 300;
                             font-size: 22px;
                             line-height: 29px;
+                            color: #141414;
                           "
                         >
                           150mg
@@ -333,12 +351,14 @@
                   </table>
                   <p
                     style="
-                      font-family: Roboto;
+                      font-family: Roboto, Helvetica, sans-serif;
                       font-weight: 400;
                       font-size: 17px;
                       line-height: 17px;
                       text-align: center;
-                      margin-top: 20px;
+                      margin: 20px 0 0 0;
+                      border-spacing: 0;
+                      color: #141414;
                     "
                   >
                     Cafeína <br />
@@ -353,6 +373,8 @@
                       height: 90px;
                       border-radius: 50%;
                       border: 1px solid #7c68b5;
+                      border-spacing: 0;
+                      color: #141414;
                     "
                   >
                     <tr align="center">
@@ -360,10 +382,12 @@
                         <p
                           align="center"
                           style="
-                            font-family: Roboto;
+                            margin: 0;
+                            font-family: Roboto, Helvetica, sans-serif;
                             font-weight: 300;
                             font-size: 22px;
                             line-height: 29px;
+                            color: #141414;
                           "
                         >
                           150mg
@@ -373,12 +397,13 @@
                   </table>
                   <p
                     style="
-                      font-family: Roboto;
+                      font-family: Roboto, Helvetica, sans-serif;
                       font-weight: 400;
                       font-size: 17px;
                       line-height: 17px;
                       text-align: center;
-                      margin-top: 20px;
+                      margin: 20px 0 0 0;
+                      color: #141414;
                     "
                   >
                     Fosfatidilserina
@@ -386,7 +411,10 @@
                 </td>
               </tr>
             </table>
-            <table align="center" style="width: 320px; margin-top: 20px">
+            <table
+              align="center"
+              style="width: 320px; margin-top: 20px; border-spacing: 0"
+            >
               <tr align="center">
                 <td style="width: 150px; vertical-align: top">
                   <table
@@ -395,13 +423,20 @@
                       height: 90px;
                       border-radius: 50%;
                       border: 1px solid #7c68b5;
+                      border-spacing: 0;
+                      color: #141414;
                     "
                   >
                     <tr align="center">
                       <td>
                         <img
                           src="https://i.ibb.co/2tXV2Js/pht-03.png"
-                          style="width: 38px; height: 49px"
+                          style="
+                            width: 38px;
+                            height: 49px;
+                            display: block;
+                            border-spacing: 0;
+                          "
                           alt="Ícone desenhado de um gengibre."
                         />
                       </td>
@@ -409,12 +444,13 @@
                   </table>
                   <p
                     style="
-                      font-family: Roboto;
+                      font-family: Roboto, Helvetica, sans-serif;
                       font-weight: 400;
                       font-size: 17px;
                       line-height: 17px;
                       text-align: center;
-                      margin-top: 20px;
+                      margin: 20px 0 0 0;
+                      color: #141414;
                     "
                   >
                     Extrato de Gengibre <br />
@@ -428,13 +464,19 @@
                       height: 90px;
                       border-radius: 50%;
                       border: 1px solid #7c68b5;
+                      border-spacing: 0;
                     "
                   >
                     <tr align="center">
                       <td>
                         <img
                           src="https://i.ibb.co/5M5XTYR/pht-04.png"
-                          style="width: 55px; height: 29px"
+                          style="
+                            width: 55px;
+                            height: 29px;
+                            display: block;
+                            border-spacing: 0;
+                          "
                           alt="Ícone desenhado de um peixe."
                         />
                       </td>
@@ -447,7 +489,8 @@
                       font-size: 17px;
                       line-height: 17px;
                       text-align: center;
-                      margin-top: 20px;
+                      margin: 20px 0 0 0;
+                      color: #141414;
                     "
                   >
                     Óleos de Peixe <br />
@@ -463,16 +506,24 @@
           <td style="padding: 40px 24px">
             <h2
               style="
-                font-family: Helvetica;
+              color: #333333;
+                font-family: Helvetica, sans-serif;
                 font-size: 17px;
                 font-weight: 700;
                 line-height: 22px;
-                margin-bottom: 24px;
+                margin: 0 0 24px 0;
               "
             >
               PROTEÍNAS: O SUPLEMENTO MAIS CONSUMIDO POR ESPORTISTAS.
             </h2>
-            <p style="font-family: Helvetica; font-size: 17px; color: #333333">
+            <p
+              style="
+                margin: 0;
+                font-family: Helvetica, sans-serif;
+                font-size: 17px;
+                color: #333333;
+              "
+            >
               <span
                 style="
                   width: 11px;
@@ -485,7 +536,14 @@
               ></span
               >Ganho de massa magra
             </p>
-            <p style="font-family: Helvetica; font-size: 17px; color: #333333">
+            <p
+              style="
+                margin: 0;
+                font-family: Helvetica, sans-serif;
+                font-size: 17px;
+                color: #333333;
+              "
+            >
               <span
                 style="
                   width: 11px;
@@ -498,7 +556,14 @@
               ></span
               >Melhora na composição corporal
             </p>
-            <p style="font-family: Helvetica; font-size: 17px; color: #333333">
+            <p
+              style="
+                margin: 0;
+                font-family: Helvetica, sans-serif;
+                font-size: 17px;
+                color: #333333;
+              "
+            >
               <span
                 style="
                   width: 11px;
@@ -518,13 +583,14 @@
           <td
             style="
               padding: 108px 40px;
-              background: url(https://i.ibb.co/x5LwpCr/pht-05.png) no-repeat center center /
-                cover;
+              background: url(https://i.ibb.co/x5LwpCr/pht-05.png) no-repeat
+                center center / cover;
             "
           >
             <h3
               style="
-                font-family: Proxima Nova;
+                margin: 0;
+                font-family: Proxima Nova, Hlevetica, sans-serif;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 17px;
@@ -536,8 +602,8 @@
             </h3>
             <h2
               style="
-                margin-top: 14px;
-                font-family: Proxima Nova;
+                margin: 14px 0 0 0;
+                font-family: Proxima Nova, Hlevetica, sans-serif;
                 font-size: 21px;
                 font-weight: 900;
                 line-height: 22px;
@@ -557,7 +623,7 @@
                 <td>
                   <img
                     src="https://i.ibb.co/M1NRnzH/pht-06.png"
-                    style="width: 150px"
+                    style="width: 150px; display: block; border-spacing: 0"
                     alt="Imagem do Whey Protein da Essential Nutrition."
                   />
                 </td>
@@ -567,7 +633,8 @@
                       <td>
                         <h3
                           style="
-                            font-family: Helvetica;
+                            margin: 0;
+                            font-family: Helvetica, sans-serif;
                             font-weight: 600;
                             font-size: 17px;
                             line-height: 15px;
@@ -578,7 +645,8 @@
                         </h3>
                         <p
                           style="
-                            font-family: Helvetica;
+                            margin: 0;
+                            font-family: Helvetica, sans-serif;
                             font-size: 12px;
                             line-height: 15px;
                             color: #333333;
@@ -588,19 +656,20 @@
                         </p>
                         <h4
                           style="
-                            font-family: Helvetica;
+                            font-family: Helvetica, sans-serif;
                             font-weight: 600;
                             font-size: 16px;
                             color: #333333;
                             line-height: 19px;
-                            margin-top: 24px;
+                            margin: 24px 0 0 0;
                           "
                         >
                           Sabores
                         </h4>
                         <p
                           style="
-                            font-family: Helvetica;
+                            margin: 0;
+                            font-family: Helvetica, sans-serif;
                             font-size: 16px;
                             color: #333333;
                             line-height: 19px;
@@ -616,12 +685,12 @@
                 </td>
               </tr>
             </table>
-            <table style="padding: 0px 40px">
+            <table style="padding: 0px 40px; border-spacing: 0">
               <tr>
                 <td>
                   <h4
                     style="
-                      font-family: Helvetica;
+                      font-family: Helvetica, sans-serif;
                       font-weight: 600;
                       font-size: 16px;
                       color: #333333;
@@ -633,7 +702,8 @@
                   </h4>
                   <p
                     style="
-                      font-family: Helvetica;
+                      margin: 0;
+                      font-family: Helvetica, sans-serif;
                       font-size: 16px;
                       color: #333333;
                       line-height: 19px;
@@ -653,7 +723,8 @@
                   </p>
                   <p
                     style="
-                      font-family: Helvetica;
+                      margin: 0;
+                      font-family: Helvetica, sans-serif;
                       font-size: 16px;
                       color: #333333;
                       line-height: 19px;
@@ -673,7 +744,8 @@
                   </p>
                   <p
                     style="
-                      font-family: Helvetica;
+                      margin: 0;
+                      font-family: Helvetica, sans-serif;
                       font-size: 16px;
                       color: #333333;
                       line-height: 19px;
@@ -693,7 +765,8 @@
                   </p>
                   <p
                     style="
-                      font-family: Helvetica;
+                      margin: 0;
+                      font-family: Helvetica, sans-serif;
                       font-size: 16px;
                       color: #333333;
                       line-height: 19px;
@@ -722,7 +795,7 @@
             <img
               src="https://i.ibb.co/BZSjV6P/pht-07.png"
               width="100%"
-              style="max-width: 600px"
+              style="max-width: 600px; display: block; border-spacing: 0"
               alt="Imagem encapsulado Omega Brain da Essenial Nutrition."
             />
           </td>
@@ -735,7 +808,8 @@
                 <td>
                   <h2
                     style="
-                      font-family: Helvetica;
+                      margin: 0;
+                      font-family: Helvetica, sans-serif;
                       font-size: 21px;
                       line-height: 22px;
                       color: #7c68b5;
@@ -749,19 +823,18 @@
             </table>
             <table align="center">
               <tr>
-                <td
-                  style="
-                    padding: 26px 15px 5px 15px;
-                    border-bottom: 2px solid #7c68b5;
-                  "
-                >
+                <td style="padding: 26px 15px 5px 15px">
                   <h4
                     style="
-                      font-family: Helvetica Neue;
+                      margin: 0 auto;
+                      width: 258px;
+                      font-family: Helvetica Neue, Helvetica, sans-serif;
                       font-size: 17px;
                       line-height: 22px;
                       color: #ffffff;
                       text-align: center;
+                      border-bottom: 2px solid #7c68b5;
+                      padding-bottom: 5px;
                     "
                   >
                     Disponível em dois sabores
@@ -778,7 +851,7 @@
                         <a
                           style="
                             width: 120px;
-                            font-family: Helvetica Neue;
+                            font-family: Helvetica Neue, Helvetica, sans-serif;
                             font-size: 17px;
                             background: #ffffff;
                             color: #141414;
@@ -786,6 +859,7 @@
                             display: block;
                             text-align: center;
                             border-radius: 4px;
+                            text-decoration: none;
                           "
                           href="https://www.essentialnutrition.com.br/collagen-2-joint-neutro-lata"
                           target="_blank"
@@ -796,13 +870,13 @@
                   </table>
                 </td>
                 <td>
-                  <table align="right">
+                  <table>
                     <tr>
-                      <td>
+                      <td align="right">
                         <a
                           style="
                             width: 120px;
-                            font-family: Helvetica Neue;
+                            font-family: Helvetica Neue, Helvetica, sans-serif;
                             font-size: 17px;
                             background: #ffffff;
                             color: #141414;
@@ -810,6 +884,7 @@
                             display: block;
                             text-align: center;
                             border-radius: 4px;
+                            text-decoration: none;
                           "
                           href="https://www.essentialnutrition.com.br/collagen-2-joint-limao-siciliano-lata"
                           target="_blank"
@@ -832,6 +907,7 @@
                   <img
                     src="https://i.ibb.co/XzYMqXY/pht-08.png"
                     width="138px"
+                    style="display: block; border-spacing: 0"
                     alt="Imagem de uma mulher segurando o Endurance and Recovery da Essential Nutrition."
                   />
                 </td>
@@ -841,16 +917,16 @@
                       <td style="padding-left: 25px">
                         <h2
                           style="
-                            font-family: Helvetica;
+                            font-family: Helvetica Neue, Helvetica, sans-serif;
                             font-size: 20px;
                             line-height: 20px;
                             color: #7c68b5;
-                            margin-bottom: 17px;
+                            margin: 0 0 17px 0;
                           "
                         >
                           ENDURANCE AND RECOVERY
                         </h2>
-                        <p style="color: #333333; margin-bottom: 4px">
+                        <p style="color: #333333; margin: 0 0 4px 0">
                           <span style="font-weight: 600">De:</span>R$
                           <span style="text-decoration: line-through"
                             >195,00</span
@@ -860,11 +936,13 @@
                           style="
                             background: #847f7a;
                             width: 136px;
-                            font-family: Helvetica;
+                            font-family: Helvetica Neue, Helvetica, sans-serif;
                             font-size: 19px;
                             color: #ffffff;
                             padding: 2px 4px;
                             border-radius: 4px;
+                            margin-top: 0;
+                            margin-right: 0;
                             margin-bottom: 8px;
                             margin-left: -4px;
                           "
@@ -890,13 +968,14 @@
           <td
             style="
               padding: 32px 72px;
-              background: url(https://i.ibb.co/7gL7G9G/pht-09.png) no-repeat center center /
-                auto;
+              background: url(https://i.ibb.co/7gL7G9G/pht-09.png) no-repeat
+                center center / auto;
             "
           >
             <h4
               style="
-                font-family: Helvetica;
+                margin: 0;
+                font-family: Helvetica Neue, Helvetica, sans-serif;
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 23px;
@@ -909,7 +988,7 @@
             <a
               style="
                 width: 181px;
-                font-family: Helvetica Neue;
+                font-family: Helvetica Neue, Helvetica, sans-serif;
                 font-size: 17px;
                 background: #ffffff;
                 color: #141414;
@@ -918,6 +997,7 @@
                 text-align: center;
                 border-radius: 4px;
                 margin: 24px auto 0 auto;
+                text-decoration: none;
               "
               href="https://www.essentialnutrition.com.br/collagen-2-joint-neutro-lata"
               target="_blank"
