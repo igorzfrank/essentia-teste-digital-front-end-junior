@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essentia Front-end Test</title>
+    <meta name="”color-scheme”" content="”light" dark” />
+    <meta name="”supported-color-schemes”" content="”light" dark” />
+    <style>
+      @font-face {
+        font-family: "Proxima Nova";
+        src: url("./fonts/ProximaNova-Black.woff") format("woff");
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Proxima Nova";
+        src: url("./fonts/ProximaNova-Semibold.woff") format("woff");
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Helvetica Neue";
+        src: url("./fonts/HelveticaNeue-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Helvetica Neue";
+        src: url("./fonts/HelveticaNeue-Bold.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Roboto";
+        src: url("./fonts/Roboto-Light.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Roboto";
+        src: url("./fonts/Roboto-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        margin: 0;
+        font-family: Helvetica;
+      }
+
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+        border: 0;
+      }
+
+      img {
+        border: 0;
+        display: block;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+        line-height: 22px;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        background: #cccccc;
+      }
+
+      .main {
+        width: 100%;
+        max-width: 600px;
+        background: white;
+        margin: 0 auto;
+        border-spacing: 0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main" width="100%" cellpadding="0" cellspacing="0">
+        <!-- NAV -->
+        <tr>
+          <td>
+            <table style="background: black; padding: 7px 0px">
+              <tr>
+                <td align="center" style="width: 200px; padding: 2px 0px">
+                  <a
+                    href="https://www.essentialnutrition.com.br/"
+                    target="_blank"
+                    style="
+                      font-family: Proxima Nova;
+                      font-weight: 600;
+                      letter-spacing: 0.56px;
+                      font-size: 14px;
+                      color: #ffffff;
+                      padding-left: 20px;
+                    "
+                    >HOME</a
+                  >
+                </td>
+                <td
+                  align="center"
+                  style="
+                    width: 200px;
+                    padding: 2px 0px;
+                    border-left: 1px solid #ffffff;
+                    border-right: 1px solid #ffffff;
+                  "
+                >
+                  <a
+                    href="https://www.essentialnutrition.com.br/produtos/lancamentos"
+                    target="_blank"
+                    style="
+                      font-family: Proxima Nova;
+                      font-weight: 600;
+                      letter-spacing: 0.56px;
+                      font-size: 14px;
+                      color: #ffffff;
+                    "
+                    >LANÇAMENTOS</a
+                  >
+                </td>
+                <td align="center" style="width: 200px; padding: 2px 0px">
+                  <a
+                    href="https://www.essentialnutrition.com.br/customer/account/login/"
+                    target="_blank"
+                    style="
+                      font-family: Proxima Nova;
+                      font-weight: 600;
+                      letter-spacing: 0.56px;
+                      font-size: 14px;
+                      color: #ffffff;
+                      padding-right: 20px;
+                    "
+                    >LOGIN</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Hero -->
+        <tr>
+          <td>
+            <img
+              src="https://i.ibb.co/5rys8Cp/pht-01.png"
+              width="100%"
+              style="max-width: 600px"
+              alt="Imagem do encapsulado Omega Braien da Essential Nutrition"
+            />
+          </td>
+        </tr>
+        <!-- Hero description -->
+        <tr>
+          <td style="padding: 40px 24px">
+            <p
+              style="
+                font-family: Helvetica Neue;
+                font-weight: 700;
+                color: #141414;
+              "
+            >
+              Olá, Tudo bem?
+            </p>
+            <p
+              style="
+                font-family: Helvetica Neue;
+                margin: 27px 0px;
+                color: #666666;
+              "
+            >
+              Uma ótima alternativa para essa situação é abordar a
+              <span style="font-weight: bold; color: #7c68b5"
+                >relação do ômega-3 com o bom funcionamento do nosso
+                cérebro.</span
+              >
+            </p>
+            <p style="font-family: Helvetica Neue; color: #666666">
+              <span style="font-weight: bold; color: #7c68b5"
+                >60% da estrutura cerebral</span
+              >
+              é formada por gorduras e
+              <span style="font-weight: bold; color: #7c68b5"
+                >20% dessa quantidade representa o DHA,</span
+              >
+              um ácido graxo que faz parte da composição do ômega-3.
+            </p>
+          </td>
+        </tr>
+        <!-- Omega image -->
+        <tr>
+          <td>
+            <img
+              src="https://i.ibb.co/vX9gY8j/pht-02.png"
+              width="100%"
+              style="max-width: 600px"
+              alt="Imagem de uma mão segurando duas capsulas de ômega-3 da Essential Nutrition"
+            />
+          </td>
+        </tr>
+        <!-- Omega content-->
+        <tr>
+          <td style="padding: 40px 24px; background: #141414">
+            <h1
+              style="
+                font-family: Helvetica;
+                font-weight: 700;
+                line-height: 30px;
+                font-size: 30px;
+                color: #ffffff;
+              "
+            >
+              ÔMEGA-3 E OUTROS NUTRIENTES PARA O CÉREBRO
+            </h1>
+            <p
+              style="
+                font-family: Helvetica Neue;
+                margin: 27px 0px;
+                color: #ffffff;
+              "
+            >
+              Entre os ácidos graxos que compõem o ômega-3, o
+              <span style="font-weight: bold; color: #7c68b5">DHA</span> é o que
+              tem
+              <span style="font-weight: bold; color: #7c68b5"
+                >mais facilidade de ser absorvido</span
+              >
+              pelo nosso cérebro.
+            </p>
+            <p style="font-family: Helvetica Neue; color: #ffffff">
+              Para entender um pouco mais sobre essa relação e ainda descobrir
+              outros hábitos que podem ajudar na
+              <span style="font-weight: bold; color: #7c68b5"
+                >saúde cerebral</span
+              >, acesse o artigo no nosso blog!
+            </p>
+            <a
+              style="
+                font-family: Helvetica Neue;
+                font-size: 17px;
+                margin-top: 40px;
+                background: #ffffff;
+                color: #141414;
+                width: 200px;
+                padding: 13px 10px;
+                display: block;
+                text-align: center;
+                border-radius: 4px;
+              "
+              href="https://www.essentialnutrition.com.br/conteudos/"
+              target="_blank"
+              >ACESSAR CONTEÚDO</a
+            >
+          </td>
+        </tr>
+        <!-- Omega components-->
+        <tr>
+          <td style="padding: 40px 24px; background: #ededed">
+            <table>
+              <tr>
+                <td>
+                  <p style="font-family: Helvetica Neue; color: #141414">
+                    Uma composição inteligente com ômega-3 que pode ajudar você
+                    a
+                    <span style="font-weight: bold; color: #7c68b5">
+                      melhorar as conexões cerebrais, aumentar o foco e
+                      aprimorar a concentração.
+                    </span>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <table align="center" style="width: 320px; margin-top: 40px">
+              <tr>
+                <td style="width: 150px; vertical-align: top">
+                  <table
+                    align="center"
+                    style="
+                      width: 90px;
+                      height: 90px;
+                      border-radius: 50%;
+                      border: 1px solid #7c68b5;
+                    "
+                  >
+                    <tr align="center">
+                      <td>
+                        <p
+                          align="center"
+                          style="
+                            font-family: Roboto;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 29px;
+                          "
+                        >
+                          150mg
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                  <p
+                    style="
+                      font-family: Roboto;
+                      font-weight: 400;
+                      font-size: 17px;
+                      line-height: 17px;
+                      text-align: center;
+                      margin-top: 20px;
+                    "
+                  >
+                    Cafeína <br />
+                    Natural
+                  </p>
+                </td>
+                <td style="width: 150px; vertical-align: top">
+                  <table
+                    align="center"
+                    style="
+                      width: 90px;
+                      height: 90px;
+                      border-radius: 50%;
+                      border: 1px solid #7c68b5;
+                    "
+                  >
+                    <tr align="center">
+                      <td>
+                        <p
+                          align="center"
+                          style="
+                            font-family: Roboto;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 29px;
+                          "
+                        >
+                          150mg
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                  <p
+                    style="
+                      font-family: Roboto;
+                      font-weight: 400;
+                      font-size: 17px;
+                      line-height: 17px;
+                      text-align: center;
+                      margin-top: 20px;
+                    "
+                  >
+                    Fosfatidilserina
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <table align="center" style="width: 320px; margin-top: 20px">
+              <tr align="center">
+                <td style="width: 150px; vertical-align: top">
+                  <table
+                    style="
+                      width: 90px;
+                      height: 90px;
+                      border-radius: 50%;
+                      border: 1px solid #7c68b5;
+                    "
+                  >
+                    <tr align="center">
+                      <td>
+                        <img
+                          src="https://i.ibb.co/2tXV2Js/pht-03.png"
+                          style="width: 38px; height: 49px"
+                          alt="Ícone desenhado de um gengibre."
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                  <p
+                    style="
+                      font-family: Roboto;
+                      font-weight: 400;
+                      font-size: 17px;
+                      line-height: 17px;
+                      text-align: center;
+                      margin-top: 20px;
+                    "
+                  >
+                    Extrato de Gengibre <br />
+                    Tailandês
+                  </p>
+                </td>
+                <td style="width: 150px; vertical-align: top">
+                  <table
+                    style="
+                      width: 90px;
+                      height: 90px;
+                      border-radius: 50%;
+                      border: 1px solid #7c68b5;
+                    "
+                  >
+                    <tr align="center">
+                      <td>
+                        <img
+                          src="https://i.ibb.co/5M5XTYR/pht-04.png"
+                          style="width: 55px; height: 29px"
+                          alt="Ícone desenhado de um peixe."
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                  <p
+                    style="
+                      font-family: Roboto;
+                      font-weight: 400;
+                      font-size: 17px;
+                      line-height: 17px;
+                      text-align: center;
+                      margin-top: 20px;
+                    "
+                  >
+                    Óleos de Peixe <br />
+                    e de Krill
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Protein call -->
+        <tr>
+          <td style="padding: 40px 24px">
+            <h2
+              style="
+                font-family: Helvetica;
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 22px;
+                margin-bottom: 24px;
+              "
+            >
+              PROTEÍNAS: O SUPLEMENTO MAIS CONSUMIDO POR ESPORTISTAS.
+            </h2>
+            <p style="font-family: Helvetica; font-size: 17px; color: #333333">
+              <span
+                style="
+                  width: 11px;
+                  height: 11px;
+                  background: #7c68b5;
+                  border-radius: 50%;
+                  display: inline-block;
+                  margin-right: 10px;
+                "
+              ></span
+              >Ganho de massa magra
+            </p>
+            <p style="font-family: Helvetica; font-size: 17px; color: #333333">
+              <span
+                style="
+                  width: 11px;
+                  height: 11px;
+                  background: #7c68b5;
+                  border-radius: 50%;
+                  display: inline-block;
+                  margin-right: 10px;
+                "
+              ></span
+              >Melhora na composição corporal
+            </p>
+            <p style="font-family: Helvetica; font-size: 17px; color: #333333">
+              <span
+                style="
+                  width: 11px;
+                  height: 11px;
+                  background: #7c68b5;
+                  border-radius: 50%;
+                  display: inline-block;
+                  margin-right: 10px;
+                "
+              ></span
+              >Saciedade
+            </p>
+          </td>
+        </tr>
+        <!-- Protein image -->
+        <tr>
+          <td
+            style="
+              padding: 108px 40px;
+              background: url(https://i.ibb.co/x5LwpCr/pht-05.png) no-repeat center center /
+                cover;
+            "
+          >
+            <h3
+              style="
+                font-family: Proxima Nova;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 17px;
+                color: #ffffff;
+                text-align: center;
+              "
+            >
+              VOCÊ CONHECE AS DIFERENÇAS ENTRE AS PROTEÍNAS?
+            </h3>
+            <h2
+              style="
+                margin-top: 14px;
+                font-family: Proxima Nova;
+                font-size: 21px;
+                font-weight: 900;
+                line-height: 22px;
+                color: #7c68b5;
+                text-align: center;
+              "
+            >
+              VEM DESCOBRIR AS OPÇÕES DA NOSSA LINHA.
+            </h2>
+          </td>
+        </tr>
+        <!-- Whey description -->
+        <tr>
+          <td style="padding: 40px 24px 40px 0px">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    src="https://i.ibb.co/M1NRnzH/pht-06.png"
+                    style="width: 150px"
+                    alt="Imagem do Whey Protein da Essential Nutrition."
+                  />
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <h3
+                          style="
+                            font-family: Helvetica;
+                            font-weight: 600;
+                            font-size: 17px;
+                            line-height: 15px;
+                            color: #7c68b5;
+                          "
+                        >
+                          WHEY PROTEIN
+                        </h3>
+                        <p
+                          style="
+                            font-family: Helvetica;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #333333;
+                          "
+                        >
+                          22g PROTEÍNA
+                        </p>
+                        <h4
+                          style="
+                            font-family: Helvetica;
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: #333333;
+                            line-height: 19px;
+                            margin-top: 24px;
+                          "
+                        >
+                          Sabores
+                        </h4>
+                        <p
+                          style="
+                            font-family: Helvetica;
+                            font-size: 16px;
+                            color: #333333;
+                            line-height: 19px;
+                          "
+                        >
+                          Cacau, Açaí com Banana, Cappuccino, Frutas Vermelhas,
+                          Café Espresso, Baunilha, Abacaxi com Água de Coco e
+                          Neutro
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table style="padding: 0px 40px">
+              <tr>
+                <td>
+                  <h4
+                    style="
+                      font-family: Helvetica;
+                      font-weight: 600;
+                      font-size: 16px;
+                      color: #333333;
+                      line-height: 19px;
+                      margin: 24px 0px 10px 0px;
+                    "
+                  >
+                    Composição
+                  </h4>
+                  <p
+                    style="
+                      font-family: Helvetica;
+                      font-size: 16px;
+                      color: #333333;
+                      line-height: 19px;
+                    "
+                  >
+                    <span
+                      style="
+                        width: 3px;
+                        height: 3px;
+                        background: #333333;
+                        display: inline-block;
+                        border-radius: 50%;
+                        margin-bottom: 4px;
+                      "
+                    ></span>
+                    Proteínas hidrolisada e isolada do soro de leite (WPH e WPI)
+                  </p>
+                  <p
+                    style="
+                      font-family: Helvetica;
+                      font-size: 16px;
+                      color: #333333;
+                      line-height: 19px;
+                    "
+                  >
+                    <span
+                      style="
+                        width: 3px;
+                        height: 3px;
+                        background: #333333;
+                        display: inline-block;
+                        border-radius: 50%;
+                        margin-bottom: 4px;
+                      "
+                    ></span>
+                    Peptídeos de colágeno Peptan®
+                  </p>
+                  <p
+                    style="
+                      font-family: Helvetica;
+                      font-size: 16px;
+                      color: #333333;
+                      line-height: 19px;
+                    "
+                  >
+                    <span
+                      style="
+                        width: 3px;
+                        height: 3px;
+                        background: #333333;
+                        display: inline-block;
+                        border-radius: 50%;
+                        margin-bottom: 4px;
+                      "
+                    ></span>
+                    BCAA naturalmente em sua composição
+                  </p>
+                  <p
+                    style="
+                      font-family: Helvetica;
+                      font-size: 16px;
+                      color: #333333;
+                      line-height: 19px;
+                    "
+                  >
+                    <span
+                      style="
+                        width: 3px;
+                        height: 3px;
+                        background: #333333;
+                        display: inline-block;
+                        border-radius: 50%;
+                        margin-bottom: 4px;
+                      "
+                    ></span>
+                    Adoçantes naturais
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Omega brain flavors hero -->
+        <tr>
+          <td>
+            <img
+              src="https://i.ibb.co/BZSjV6P/pht-07.png"
+              width="100%"
+              style="max-width: 600px"
+              alt="Imagem encapsulado Omega Brain da Essenial Nutrition."
+            />
+          </td>
+        </tr>
+        <!-- Omega brain flavors-->
+        <tr>
+          <td style="padding: 40px 36px; background: #000000">
+            <table>
+              <tr>
+                <td>
+                  <h2
+                    style="
+                      font-family: Helvetica;
+                      font-size: 21px;
+                      line-height: 22px;
+                      color: #7c68b5;
+                      text-align: center;
+                    "
+                  >
+                    VEM DESCOBRIR AS OPÇÕES DA NOSSA LINHA.
+                  </h2>
+                </td>
+              </tr>
+            </table>
+            <table align="center">
+              <tr>
+                <td
+                  style="
+                    padding: 26px 15px 5px 15px;
+                    border-bottom: 2px solid #7c68b5;
+                  "
+                >
+                  <h4
+                    style="
+                      font-family: Helvetica Neue;
+                      font-size: 17px;
+                      line-height: 22px;
+                      color: #ffffff;
+                      text-align: center;
+                    "
+                  >
+                    Disponível em dois sabores
+                  </h4>
+                </td>
+              </tr>
+            </table>
+            <table align="center" style="width: 260px; margin-top: 10px">
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <a
+                          style="
+                            width: 120px;
+                            font-family: Helvetica Neue;
+                            font-size: 17px;
+                            background: #ffffff;
+                            color: #141414;
+                            padding: 13px 0px;
+                            display: block;
+                            text-align: center;
+                            border-radius: 4px;
+                          "
+                          href="https://www.essentialnutrition.com.br/collagen-2-joint-neutro-lata"
+                          target="_blank"
+                          >NEUTRO</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table align="right">
+                    <tr>
+                      <td>
+                        <a
+                          style="
+                            width: 120px;
+                            font-family: Helvetica Neue;
+                            font-size: 17px;
+                            background: #ffffff;
+                            color: #141414;
+                            padding: 13px 0px;
+                            display: block;
+                            text-align: center;
+                            border-radius: 4px;
+                          "
+                          href="https://www.essentialnutrition.com.br/collagen-2-joint-limao-siciliano-lata"
+                          target="_blank"
+                          >LIMÃO</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Endurace buy -->
+        <tr>
+          <td style="padding: 40px 24px">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    src="https://i.ibb.co/XzYMqXY/pht-08.png"
+                    width="138px"
+                    alt="Imagem de uma mulher segurando o Endurance and Recovery da Essential Nutrition."
+                  />
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td style="padding-left: 25px">
+                        <h2
+                          style="
+                            font-family: Helvetica;
+                            font-size: 20px;
+                            line-height: 20px;
+                            color: #7c68b5;
+                            margin-bottom: 17px;
+                          "
+                        >
+                          ENDURANCE AND RECOVERY
+                        </h2>
+                        <p style="color: #333333; margin-bottom: 4px">
+                          <span style="font-weight: 600">De:</span>R$
+                          <span style="text-decoration: line-through"
+                            >195,00</span
+                          >
+                        </p>
+                        <p
+                          style="
+                            background: #847f7a;
+                            width: 136px;
+                            font-family: Helvetica;
+                            font-size: 19px;
+                            color: #ffffff;
+                            padding: 2px 4px;
+                            border-radius: 4px;
+                            margin-bottom: 8px;
+                            margin-left: -4px;
+                          "
+                        >
+                          <span style="font-weight: 600">Por:</span> RS 165,75
+                        </p>
+                        <a
+                          href="https://www.essentialnutrition.com.br/carbpro-4-1-citrus"
+                          target="_blank"
+                          style="color: #7c68b5; text-decoration: underline"
+                          >Comprar</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td
+            style="
+              padding: 32px 72px;
+              background: url(https://i.ibb.co/7gL7G9G/pht-09.png) no-repeat center center /
+                auto;
+            "
+          >
+            <h4
+              style="
+                font-family: Helvetica;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 23px;
+                color: #7c68b5;
+                text-align: center;
+              "
+            >
+              ÚLTIMAS HORAS PARA APROVEITAR!
+            </h4>
+            <a
+              style="
+                width: 181px;
+                font-family: Helvetica Neue;
+                font-size: 17px;
+                background: #ffffff;
+                color: #141414;
+                padding: 12px 15px;
+                display: block;
+                text-align: center;
+                border-radius: 4px;
+                margin: 24px auto 0 auto;
+              "
+              href="https://www.essentialnutrition.com.br/collagen-2-joint-neutro-lata"
+              target="_blank"
+              >VER TODOS</a
+            >
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
